@@ -10,17 +10,12 @@
 #define FUNC_MAX .398942
 #define RANDOM_MAX 0x7FFFFFFF
 
-#define SIMPLE_SPRNG/* simple interface                        */
-
-
-
-
 double get_eps();
 void mathPart(int);
 double doFunc(double);
 void doMVS(double[], double[]);
 
-main(int argc, char** argv)
+int main()
 {
   int niter = 0;
   srand(time(NULL));
@@ -38,7 +33,7 @@ void mathPart(int niter){
   double x, x2, x3;
   double y, y2, y3;
 
-  int seed;
+  unsigned int seed;
 
   int i = 0;
 
